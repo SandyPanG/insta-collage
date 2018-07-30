@@ -1,17 +1,51 @@
-const picture = document.querySelector('#pic');
-const frame = document.querySelectorAll('.pic-frame');
+function comenzar(){
+  var imagenes = document.querySelectorAll("#contenido img");
+ 
+  for (var i=0; i<imagenes.length; i++) {
+   imagenes[i].addEventListener("dragstart", comenzamos_arrastrar,false);
+  }
+ 
+  
+ 
+  elem_destino = document.getElementById("collage");
+ 
+  elem_destino.addEventListener("dragenter", function(e){
+ 
+   e.preventDefault();},false);
+ 
+ 
+  elem_destino.addEventListener("dragover", function(e){
+ 
+   e.preventDefault();},false); 
+ 
+  elem_destino.addEventListener("drop",soltado,false);
+  
+ 
+   
+   
+ }
+ 
+ 
+  function comenzamos_arrastrar(e){
+   var elemento = e.target;
+   e.dataTransfer.setData("Text", elemento.getAttribute("id"));
+  }
+ 
+  function soltado(e) {
+ 
+   e.preventDefault();
+   var id = e.dataTransfer.getData("Text");
+ 
+   var src = document.getElementById(id) .src;
+ 
+   elem_destino.innerHTML="<img src='" + src + "'>";
+  }
+ 
+ 
+ 
+ 
+ window.addEventListener("load", comenzar, false);﻿
+  
+ 
+ 
 
-// picture 'Listeners'.
-picture.addEventListener('dragstart',dragStart);
-picture.addEventListener('dragend',dragEnd);
-
-// Drag functions
-function dragStart() {
-    console.log('star');
-    
-}
-
-function dragEnd() {
-    console.log('end');
-    
-}
