@@ -52,18 +52,18 @@ body {
 }
 
 .banner {
-    width: 100%;
-    height: 250px;
+    width: 130px;
+    height: 280px;
 }
 
 .square {
-    margin: 0;
-    width: 100%;
-    height: 145px;
+    width: 125px;
+    height: 140px;
 }
 
 .squareTwo {
-    margin: 0;
-    width: 100%;
-    height: 145px;
+    margin:0px;
+    width: 125px;
+    height: 140px;
 }
+
