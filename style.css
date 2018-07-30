@@ -36,12 +36,12 @@ body {
     width: 350px;
   }
 
-  .marco-foto {
+  .pic-frame {
     min-height: 100px;
     margin-top: 10px;
   }
 
-  .marco-foto > img {
+  .pic-frame > img {
     margin-bottom: 0;
   }
 
