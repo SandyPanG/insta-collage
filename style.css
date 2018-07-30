@@ -1,0 +1,69 @@
+
+body {
+    background-color: black;
+}
+
+.text {
+    color: white;
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+}
+
+.textOne {
+    background: -webkit-linear-gradient(-45deg, #bd3381 0%,#df3968 34%,#df3968 67%,#ee583f 100%); /* Chrome10-25,Safari5.1-6 */
+    color: white;
+    font-family: 'Pacifico', cursive;
+    font-size: 2em;
+}
+
+#contenido {
+    margin-top: 5vh;
+}
+
+  img {
+    width: 30%;
+    margin-bottom: 30px;
+  }
+
+  /* del collage */
+
+  .delColl {
+    background: -webkit-linear-gradient(-45deg, #bd3381 0%,#df3968 34%,#df3968 67%,#ee583f 100%); /* Chrome10-25,Safari5.1-6 */
+    display: block;
+    height: 300px;
+    margin-right: 2px;
+    margin-left: 2px;
+    width: 350px;
+  }
+
+  .marco-foto {
+    min-height: 100px;
+    margin-top: 10px;
+  }
+
+  .marco-foto > img {
+    margin-bottom: 0;
+  }
+
+  .container-marco{
+    border: 1px dotted white;
+    padding:2% 2%;
+    margin: 3%;    
+}
+
+.banner {
+    width: 100%;
+    height: 250px;
+}
+
+.square {
+    margin: 0;
+    width: 100%;
+    height: 145px;
+}
+
+.squareTwo {
+    margin: 0;
+    width: 100%;
+    height: 145px;
+}
