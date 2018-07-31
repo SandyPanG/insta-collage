@@ -14,11 +14,14 @@ $('document').ready(init);
   			$('#div1, #div2, #div3').bind('drop', function(event) {
             var notecard = event.originalEvent.dataTransfer.getData("text/plain");
             event.target.appendChild(document.getElementById(notecard));
+            // x.css('heigth','auto';)
 			// Turn off the default behaviour
 			// without this, FF will try and go to a URL with your id's name
             event.preventDefault();
 			});
         }
+
+
 
 // function comenzar(){
 //   var imagenes = document.querySelectorAll("#contenido img");

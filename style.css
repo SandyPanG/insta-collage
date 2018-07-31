@@ -51,7 +51,7 @@ body {
     margin: 3%;    
 }
 
-.banner {
+/* .banner {
     width: 130px;
     height: 280px;
 }
@@ -65,5 +65,83 @@ body {
     margin:0px;
     width: 125px;
     height: 140px;
+} */
+
+
+/* media queries */
+@media only screen and (min-width: 320px) {
+    .banner {
+        width: 130px;
+        height: 280px;
+    }
+    
+    .square {
+        width: 125px;
+        height: 140px;
+    }
+    
+    .squareTwo {
+        margin:0px;
+        width: 125px;
+        height: 140px;
+    }
 }
 
+@media only screen and (min-width: 375px) {
+    .banner {
+        width: 160px;
+        height: 280px;
+    }
+    
+    .square {
+        width: 143px;
+        height: 140px;
+    }
+    
+    .squareTwo {
+        margin:0px;
+        width: 143px;
+        height: 140px;
+    }
+}
+
+@media only screen and (min-width: 425px) {
+    .banner {
+        margin-left: 3px;
+        width: 180px;
+        height: 280px;
+    }
+    
+    .square {
+        width: 164px;
+        height: 140px;
+    }
+    
+    .squareTwo {
+        margin:0px;
+        width: 164px;
+        height: 140px;
+    }
+}
+
+
+/* formato después de arrastrar */
+/* @media print {
+    img#pic1 {
+        width: 100%;
+        height: 100%;
+    }
+   } */
+
+   /* img::after {
+       width: 100%;
+        height: auto;
+   } */
+
+   drop:after > img {
+    content:"  Dentro del contenedor  ";
+    width: 100%;
+    height: auto;
+   }
+
+   
