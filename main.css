@@ -1,0 +1,17 @@
+body {
+    background: -webkit-linear-gradient(-45deg, #bd3381 0%,#df3968 34%,#df3968 67%,#ee583f 100%); /* Chrome10-25,Safari5.1-6 */
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+}
+
+form h1 {
+    font-family: 'Pacifico', cursive !important;
+}
+
+#insta-logo {
+    width: 30%;
+}
+
+#login-google {
+    cursor: pointer;
+}
